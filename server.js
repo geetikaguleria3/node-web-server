@@ -42,11 +42,17 @@ app.get('/about',(req,res) => {
   });
 });
 
+app.get('/project', (req,res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project page'
+  });
+});
+
 app.get('/bad',(req,res) => {
   res.send({
     errorMsg: 'Bad request'
   });
 });
-app.listen(port, () => {
+app.listen(3000, () => {
   console.log(`Server is up on port ${port}`);
 });

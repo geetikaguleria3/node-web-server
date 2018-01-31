@@ -53,6 +53,6 @@ app.get('/bad',(req,res) => {
     errorMsg: 'Bad request'
   });
 });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
